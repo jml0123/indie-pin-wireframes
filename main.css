@@ -1,0 +1,358 @@
+body {
+    font-family: "Press Start 2P", monospace;
+    background: #7a9aeb;
+    margin: 0;
+}
+
+#top {
+    background: url(https://data.whicdn.com/images/106548116/original.gif)
+}
+#top .logo-wrapper, #top i {
+    color: white ;
+}
+
+#about {
+    background: #f1f1f1;
+}
+
+
+a {
+    color: inherit;
+    font-style: inherit;
+    text-decoration: inherit;
+}
+
+i {
+    padding: 5%;
+    opacity: 0.7; 
+    transform: scale(1.66);
+    transition: all 0.3s;
+    color: black;
+}
+
+i:hover {
+    opacity: 1;
+    transform: scale(1.8);
+    transition: all 0.3s;
+}
+
+.nav-links {
+    pointer-events: auto;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1 !important;
+    overflow: hidden;
+    right: 0;
+    top: -55px;
+    height: 180px;
+    width: 120px;
+    padding: 0 1.33%;
+    overflow: hidden;
+}
+
+.nav-shape {
+    position: absolute;
+    width: 120px;
+    height: 130px;
+    transition: all 0.3s;
+    right: -12px;
+    top: 0;
+    border-radius:  100%;
+    z-index: -1;
+}
+
+.full-menu {
+    background: #4cec6f;
+    border-radius: 0;
+    padding: 0 !important;
+    position: absolute;
+    width: 100%;
+    height: 100vh !important;
+    right: 0;
+    top: 0;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.full-menu i {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+}
+
+
+.links {
+    display: flex;
+    align-content: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+    list-style-type: none;
+    width: 100%;
+    display: none;
+}
+
+.links a:hover {
+    color: gold;
+}
+
+.visible {
+    display: block;
+}
+
+li {
+    padding: 5%;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.66%;
+}
+
+.nav-wrapper {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0.92;
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+.logo-wrapper {
+    color: #0f0f0f;
+    flex-grow: 3;
+    width:100%;
+    pointer-events: auto;
+}
+
+.splash-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 88vh;
+}
+
+.splash-content-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+.splash-header-container {
+    text-align: center;
+    padding: 5% 0;
+    width: 90%;
+    color: white;
+
+}
+.splash-header-container h1 {
+    font-size: 47.66px;
+}
+.splash-header-container p {
+    font-size: 17px;
+}
+
+.map-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+.map-wrapper {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#map {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+
+.about-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25% 5%;
+    width: 88vw;
+    margin: 0 auto;
+}
+
+.about-info-container h1 {
+    padding: 2.5%;
+}
+
+.about-img-wrapper{
+    padding: 0.33em;
+    border-radius: 100%;
+    max-width: 200px;
+    min-width: 75px;
+    width: 9vw;
+    margin: 0 auto;
+    -webkit-box-shadow: 7px 7px 2px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    7px 7px 2px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         7px 7px 2px 0px rgba(50, 50, 50, 0.75);
+}
+
+.about-img-wrapper img {
+    border-radius: 100%;
+    width: 100%;
+    height: auto;
+}
+.about-description-wrapper {
+    padding: 5% 2.5%;
+    line-height: 1.44em;
+}
+
+.top-page {
+    height: 100vh;
+}
+.top-artists-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25% 5%;
+    margin: 0 auto;
+}
+
+.top-header-container {
+   text-align: center;
+   color: white;
+   padding: 5%;
+   line-height: 1.2em;
+
+}
+.top-header-container h1 {
+    font-size: 18px;
+}
+.top-header-container p {
+    font-size: 14px;
+}
+
+.top-list-container {
+    padding: 2%;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+}
+
+.top-list-container a:hover {
+    color: gold;
+}
+.top-artists-table {
+    background: black
+}
+
+.socials-col {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.socials-col a {
+    border-radius: 100%;
+    padding: 3%;
+    margin: 0 1em;
+}
+
+.social-icon-wrapper {
+    max-width: 25px;
+    max-height: 25px;
+    min-width: 25px;
+    min-height: 25px;
+}
+
+.social-icon-wrapper img {
+    width: 100%;
+    height: auto;
+    border-radius: 100%;
+}
+
+.Rtable-cell--head {
+    text-decoration: underline;
+}
+
+@media (min-width: 501px) {
+    .Rtable-cell--head {
+        text-decoration: none;
+    }
+    .top-header-container h1 {
+        font-size: 20px;
+    }
+    .top-header-container p {
+        font-size: 14px;
+    }
+    .top-header-container{
+        padding: 0 5%;
+    }
+}
+@media (min-width: 768px) {
+    .nav-links {
+        top: -40px;
+    }
+    .nav-shape{
+        width: 130px;
+        height: 130px;
+    }
+
+    .splash-content-wrapper {
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 3.33%
+    }
+    .splash-header-container {
+        text-align: left;
+    }
+    .nav-links ul {
+        min-width: 18vw;
+    }
+    .full-menu{
+        width: 33vw !important;
+    }
+    .full-menu i {
+        top: 3.2em;
+        right: 3.2em;
+    }
+
+
+    .about-content-wrapper {
+        width: 44vw;
+        padding: 10% 5%;
+    }
+   
+    .top-artists-wrapper {
+        padding: 10% 5%;
+        width: 66vw;
+    }
+    .top-header-container h1 {
+        font-size: 25px;
+    }
+    .top-header-container p {
+        font-size: 17px;
+    }
+ 
+}

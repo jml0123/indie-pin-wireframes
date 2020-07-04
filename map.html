@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://use.fontawesome.com/8ee48a1bb5.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="map-page">
+        <div class="nav-wrapper">
+            <nav>
+                <a href="index.html">
+                    <div class="logo-wrapper">
+                        <h1>Indie Pin</h1>
+                    </div>
+                </a>
+                <div class="nav-links">
+                    <div class="nav-shape"></div>
+                    <a href="#" class="menu" id="toggle">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </a>
+                    <ul class="links">
+                        <a href="map.html"><li>The Map</li></a>
+                        <a href="about.html"><li>About</li></a>
+                        <a href="top.html"><li>Top Artists</li></a>
+                    </ul>
+                </div>
+            </nav>
+        </div> 
+        <div class="map-wrapper">
+            <div id='map'></div>
+        </div>
+    </div>
+</body>
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1Ijoiam1sOTIxIiwiYSI6ImNrYzc1Z3I0cjBrODIyenFwb2Ywb3R4c28ifQ.3hsSMc5rvev7U5KerHU3zw';
+    var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11'
+    });
+
+    const menu = document.querySelector('#toggle');  
+    const menuItems = document.querySelector('.nav-wrapper');  
+    const menuContainer = document.querySelector('.nav-links');
+    const menuShape = document.querySelector('.nav-shape');
+    const navLinks = document.querySelector('.links');
+    const menuIcon = document.querySelector('i');  
+
+    function toggleMenu(e) {
+        menuItems.classList.toggle('open');
+        menuContainer.classList.toggle('full-menu');
+        menuShape.classList.toggle('full-menu');
+        navLinks.classList.toggle("visible")
+        menuIcon.classList.toggle('fa-bars');
+        menuIcon.classList.add('fa-times');
+        e.preventDefault();
+    }
+    menu.addEventListener('click', toggleMenu, false);
+
+</script>
+</html>
